@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-2$+lv4naa4yepzntg3f1xyqo@2)@-#%(&^8063@2zu9@(!a$78
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-2$+lv4naa4yepzntg3f1xyqo@2)@-#%(&^8063@2zu9@(!a$78')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ## For example, for a site URL at 'web-production-3640.up.railway.app'
@@ -35,7 +34,6 @@ ALLOWED_HOSTS = ['locallibrary-production-1cca.up.railway.app', '127.0.0.1']
 
 # During development, you can instead set just the base URL
 # (you might decide to change the site a few times).
-# ALLOWED_HOSTS = ['.railway.com','127.0.0.1']
 
 # Application definition
 
